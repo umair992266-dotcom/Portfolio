@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umair Khan — Agentic Workflow Architect</title>
+<meta name="description" content="Umair Khan — Agentic Workflow Architect & LLM Engineer. Building autonomous agent pipelines with n8n, LangChain, and RAG.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="graph-bg"></canvas>
+<div class="grain"></div>
+<div class="progress-rail"><div class="progress-fill" id="progressFill"></div></div>
+
+<header>
+  <nav>
+    <div class="logo"><span class="logo-mark">UK</span><span class="logo-text">Umair<b>Khan</b></span></div>
+    <div class="navlinks">
+      <a href="#stack" data-label="01">Stack</a>
+      <a href="#projects" data-label="02">Projects</a>
+      <a href="#experience" data-label="03">Experience</a>
+      <a href="#education" data-label="04">Education</a>
+    </div>
+    <div class="nav-dock" aria-label="Quick links">
+      <a class="dock-btn" href="mailto:umair992266@gmail.com" aria-label="Email" data-tip="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+      </a>
+      <a class="dock-btn" href="https://www.linkedin.com/in/umair-khan-3a546a418/" target="_blank" rel="noopener" aria-label="LinkedIn" data-tip="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+      </a>
+      <a class="dock-btn" href="https://github.com/feroze9234-art" target="_blank" rel="noopener" aria-label="GitHub" data-tip="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.65 3.02 8.6 7.2 9.99.53.1.72-.23.72-.51v-1.99c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.61 2.46 1.15 3.07.88.1-.68.37-1.15.67-1.41-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.35.1-2.81 0 0 .89-.28 2.9 1.08a10.1 10.1 0 0 1 5.28 0c2.01-1.36 2.9-1.08 2.9-1.08.57 1.46.21 2.54.1 2.81.67.73 1.08 1.67 1.08 2.82 0 4.04-2.47 4.92-4.82 5.18.38.33.72.97.72 1.96v2.9c0 .28.19.62.73.51A10.51 10.51 0 0 0 22.5 12c0-5.8-4.7-10.5-10.5-10.5Z"/></svg>
+      </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#stack">Stack</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-orbit" aria-hidden="true">
+    <div class="orbit-ring orbit-ring-1"><span class="orbit-node" style="--i:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></span><span class="orbit-node" style="--i:1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg></span><span class="orbit-node" style="--i:2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span></div>
+    <div class="orbit-ring orbit-ring-2"><span class="orbit-node" style="--i:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17V7a2 2 0 0 1 2-2h8l6 6v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 5v6h6"/></svg></span><span class="orbit-node" style="--i:1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><span class="orbit-node" style="--i:2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.27 6.96 8.73 5.04 8.73-5.04M12 22.08V12"/></svg></span><span class="orbit-node" style="--i:3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span></div>
+  </div>
+
+  <div class="wrap hero-wrap">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>OPEN TO FREELANCE &amp; AGENT-ENGINEERING WORK</div>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1 class="reveal-up" data-delay="0">
+          <span class="line">I build agents</span>
+          <span class="line">that <span class="hl">reason</span>,</span>
+          <span class="line"><span class="hl">act</span>, and report back.</span>
+        </h1>
+        <p class="hero-sub reveal-up" data-delay="1">
+          I'm <strong>Umair Khan</strong>, an AI engineer in Lahore, Pakistan building
+          agentic automation with <strong>n8n</strong> and <strong>LangChain</strong> —
+          systems that plan multi-step tasks, call real tools, and loop back for
+          human approval instead of just firing webhooks.
+        </p>
+        <div class="hero-actions reveal-up" data-delay="2">
+          <a class="btn btn-primary" href="#projects"><span>View Projects</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="Umair_Khan_CV.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+            <span>Download CV</span>
+          </a>
+        </div>
+        <div class="stat-row reveal-up" data-delay="3">
+          <div class="stat"><div class="num" data-count="90">0</div><span class="suffix">%+</span><div class="label">PROMPT ACCURACY SHIPPED</div></div>
+          <div class="stat"><div class="num" data-count="50">0</div><span class="suffix">+</span><div class="label">GITHUB STARS · RAG PROJECT</div></div>
+          <div class="stat"><div class="num" data-count="3">0</div><span class="suffix">+</span><div class="label">AGENT SYSTEMS SHIPPED</div></div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap reveal-up" data-delay="1">
+        <div class="photo-3d" id="photo3d">
+          <div class="photo-3d-inner">
+            <div class="photo-glow"></div>
+            <img src="profile.jpeg" alt="Umair Khan">
+            <div class="photo-frame-edge"></div>
+            <div class="scan-line"></div>
+            <div class="photo-chip photo-chip-status">
+              <span class="live-dot"></span>AGENT ONLINE
+            </div>
+            <div class="photo-chip photo-chip-loc">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Lahore, PK
+            </div>
+          </div>
+          <div class="photo-3d-shadow"></div>
+        </div>
+        <div class="float-card float-card-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h4m0-7v7m0-7 6-5v17l-6-5"/></svg>
+          <div><strong>RLHF</strong><span>+ SFT background</span></div>
+        </div>
+        <div class="float-card float-card-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          <div><strong>TB Harbor 2.0</strong><span>Agentic benchmark</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section id="stack">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-label">Capabilities</div>
+      <h2 class="reveal-up">The stack behind the agents</h2>
+      <p class="section-sub reveal-up" data-delay="1">Orchestration, retrieval, evaluation, and the production rigor to keep it all from breaking when it scales.</p>
+    </div>
+
+    <div class="skill-grid">
+      <div class="skill-card tilt-card reveal-up" data-delay="0">
+        <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1 2 3.46V13a4 4 0 0 1-1.2 2.86l.2 2.14a2 2 0 0 1-2 2.2H9a2 2 0 0 1-2-2.2l.2-2.14A4 4 0 0 1 6 13v-2.54A4 4 0 0 1 8 7V6a4 4 0 0 1 4-4Z"/><path d="M9 12h.01M15 12h.01"/></svg></div>
+        <h3>AI &amp; LLM Engineering</h3>
+        <p>LangChain pipelines, RAG retrieval, and prompt iteration tuned for production accuracy.</p>
+        <div class="tags"><span>LangChain</span><span>OpenAI API</span><span>RAG</span><span>RLHF / SFT</span></div>
+      </div>
+
+      <div class="skill-card tilt-card reveal-up" data-delay="1">
+        <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg></div>
+        <h3>Agentic Workflows</h3>
+        <p>Multi-step n8n agents that reason and plan before calling tools — not if-this-then-that triggers.</p>
+        <div class="tags"><span>n8n</span><span>Function Calling</span><span>Tool Use</span><span>Slack Webhooks</span></div>
+      </div>
+
+      <div class="skill-card tilt-card reveal-up" data-delay="2">
+        <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Software Engineering</h3>
+        <p>Full-stack delivery across scripting, UI, and backend services for agent-facing tools.</p>
+        <div class="tags"><span>Python</span><span>JavaScript</span><span>React</span><span>Django</span></div>
+      </div>
+
+      <div class="skill-card tilt-card reveal-up" data-delay="0">
+        <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+        <h3>Infrastructure &amp; Containers</h3>
+        <p>Docker-first development with reproducible environments and test coverage by default.</p>
+        <div class="tags"><span>Docker</span><span>Linux</span><span>GitHub</span><span>Pytest</span></div>
+      </div>
+
+      <div class="skill-card tilt-card reveal-up" data-delay="1">
+        <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+        <h3>Vector Search &amp; RAG</h3>
+        <p>FAISS-backed semantic retrieval with chunking strategies tuned to cut hallucination.</p>
+        <div class="tags"><span>FAISS</span><span>Embeddings</span><span>Chunking</span></div>
+      </div>
+
+      <div class="skill-card tilt-card reveal-up" data-delay="2">
+        <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12 11 14 15 10"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Benchmarking &amp; Eval</h3>
+        <p>Designed agentic-reasoning benchmarks and authored task suites for model evaluation.</p>
+        <div class="tags"><span>TB Harbor 2.0</span><span>OSWorld</span><span>SWE-bench</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-label">Shipped work</div>
+      <h2 class="reveal-up">Projects built end to end</h2>
+      <p class="section-sub reveal-up" data-delay="1">From intent classification to retrieval-augmented answers with cited sources.</p>
+    </div>
+
+    <div class="project-list">
+
+      <article class="project project-feat tilt-card reveal-up" data-delay="0">
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+          </div>
+          <span class="featured-pill">Featured · 2024</span>
+        </div>
+        <h3>AI Workflow Automator</h3>
+        <p>An end-to-end agentic system that reads incoming Slack messages, classifies intent with an LLM, and routes tasks to the right tool — calendar, Notion, or email. Iterated prompt templates until production accuracy exceeded 90%, plus a lightweight React UI for teammates to monitor agent logs and override decisions.</p>
+        <div class="flow">
+          <span class="node">Slack message</span><span class="arrow">→</span>
+          <span class="node">LLM intent classify</span><span class="arrow">→</span>
+          <span class="node">Tool router</span><span class="arrow">→</span>
+          <span class="node">Calendar / Notion / Email</span><span class="arrow">→</span>
+          <span class="node">Human review</span>
+        </div>
+        <div class="project-foot">
+          <div class="tags"><span>Python</span><span>LangChain</span><span>OpenAI API</span><span>Slack Webhooks</span><span>React</span></div>
+          <a class="icon-btn project-link" href="https://github.com/feroze9234-art" target="_blank" rel="noopener" aria-label="View on GitHub" data-tip="View on GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.65 3.02 8.6 7.2 9.99.53.1.72-.23.72-.51v-1.99c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.61 2.46 1.15 3.07.88.1-.68.37-1.15.67-1.41-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.35.1-2.81 0 0 .89-.28 2.9 1.08a10.1 10.1 0 0 1 5.28 0c2.01-1.36 2.9-1.08 2.9-1.08.57 1.46.21 2.54.1 2.81.67.73 1.08 1.67 1.08 2.82 0 4.04-2.47 4.92-4.82 5.18.38.33.72.97.72 1.96v2.9c0 .28.19.62.73.51A10.51 10.51 0 0 0 22.5 12c0-5.8-4.7-10.5-10.5-10.5Z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project project-feat tilt-card reveal-up" data-delay="1">
+        <div class="project-top">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          </div>
+          <span class="featured-pill">Featured · 2024</span>
+        </div>
+        <h3>RAG-Powered Knowledge Base Q&amp;A</h3>
+        <p>A retrieval-augmented generation pipeline that ingests internal docs, chunks and embeds them into a FAISS vector store, and answers natural-language questions with cited sources. Optimized chunking strategy and embedding model selection to reduce hallucinations on domain-specific queries. Open-sourced with a one-command Docker setup — 50+ stars.</p>
+        <div class="flow">
+          <span class="node">Document ingest</span><span class="arrow">→</span>
+          <span class="node">Chunk + embed</span><span class="arrow">→</span>
+          <span class="node">FAISS vector store</span><span class="arrow">→</span>
+          <span class="node">Semantic retrieval</span><span class="arrow">→</span>
+          <span class="node">Cited answer</span>
+        </div>
+        <div class="project-foot">
+          <div class="tags"><span>Python</span><span>LangChain</span><span>FAISS</span><span>OpenAI API</span><span>Docker</span></div>
+          <a class="icon-btn project-link" href="https://github.com/feroze9234-art" target="_blank" rel="noopener" aria-label="View on GitHub" data-tip="View on GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.65 3.02 8.6 7.2 9.99.53.1.72-.23.72-.51v-1.99c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.61 2.46 1.15 3.07.88.1-.68.37-1.15.67-1.41-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.35.1-2.81 0 0 .89-.28 2.9 1.08a10.1 10.1 0 0 1 5.28 0c2.01-1.36 2.9-1.08 2.9-1.08.57 1.46.21 2.54.1 2.81.67.73 1.08 1.67 1.08 2.82 0 4.04-2.47 4.92-4.82 5.18.38.33.72.97.72 1.96v2.9c0 .28.19.62.73.51A10.51 10.51 0 0 0 22.5 12c0-5.8-4.7-10.5-10.5-10.5Z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project tilt-card reveal-up" data-delay="0">
+        <div class="project-top">
+          <div class="project-icon project-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12 11 14 15 10"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <span class="period-pill">2023</span>
+        </div>
+        <h3>BizOps Dashboard Prototype</h3>
+        <p>A lightweight dashboard pulling live data from the Salesforce REST API, surfacing pipeline metrics with automated anomaly flagging. Built v1 in a weekend, refined with stakeholder feedback over three sprints of iterative, scrappy development.</p>
+        <div class="project-foot">
+          <div class="tags"><span>React</span><span>Python</span><span>Salesforce REST API</span></div>
+          <a class="icon-btn project-link" href="https://github.com/feroze9234-art" target="_blank" rel="noopener" aria-label="View on GitHub" data-tip="View on GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.65 3.02 8.6 7.2 9.99.53.1.72-.23.72-.51v-1.99c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.61 2.46 1.15 3.07.88.1-.68.37-1.15.67-1.41-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.35.1-2.81 0 0 .89-.28 2.9 1.08a10.1 10.1 0 0 1 5.28 0c2.01-1.36 2.9-1.08 2.9-1.08.57 1.46.21 2.54.1 2.81.67.73 1.08 1.67 1.08 2.82 0 4.04-2.47 4.92-4.82 5.18.38.33.72.97.72 1.96v2.9c0 .28.19.62.73.51A10.51 10.51 0 0 0 22.5 12c0-5.8-4.7-10.5-10.5-10.5Z"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-label">Track record</div>
+      <h2 class="reveal-up">Experience</h2>
+    </div>
+
+    <div class="exp-card tilt-card reveal-up">
+      <div class="exp-head">
+        <div class="exp-head-left">
+          <div class="exp-logo">UP</div>
+          <div>
+            <h3>Software Engineering Intern</h3>
+            <span class="exp-org">Upwork · Freelance</span>
+          </div>
+        </div>
+        <div class="period">2023 — Present</div>
+      </div>
+      <p>I help businesses eliminate bottlenecks by building multi-step AI agents that connect CRMs, databases, Slack, and email — automating decisions that used to take hours down to minutes. These n8n workflows aren't simple if-this-then-that logic; the agent reasons, plans, and executes complex tasks before looping back for human approval.</p>
+      <p>Alongside the no-code work, I have an AI engineering background as an AI POD Lead specializing in RLHF and Supervised Fine-Tuning. I designed Terminal Bench (TB Harbor 2.0) and authored OSWorld tasks to benchmark agentic reasoning — and bring that same engineering rigor, containerizing with Docker and testing with pytest, to every n8n deployment.</p>
+      <div class="deliver-grid">
+        <div class="deliver-item"><div class="deliver-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg></div><strong>Custom Agents</strong><span>n8n AI agents that integrate with your existing stack.</span></div>
+        <div class="deliver-item"><div class="deliver-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><strong>Cost Efficiency</strong><span>Automation that reduces headcount overhead on repetitive tasks.</span></div>
+        <div class="deliver-item"><div class="deliver-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div><strong>Production Grade</strong><span>Workflows built to scale without breaking.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-label">Foundation</div>
+      <h2 class="reveal-up">Education &amp; languages</h2>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card tilt-card reveal-up" data-delay="0">
+        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m22 10-10-5L2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div>
+        <h3>B.S. in Computer Science</h3>
+        <span class="loc">Virtual University of Pakistan</span>
+        <div class="tags">
+          <span>Machine Learning</span><span>NLP</span><span>Distributed Systems</span><span>Data Engineering</span><span>Software Engineering</span>
+        </div>
+      </div>
+
+      <div class="edu-card tilt-card reveal-up" data-delay="1">
+        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></div>
+        <h3>Languages</h3>
+        <span class="loc">Communication across borders</span>
+        <div class="lang-row">
+          <div class="lang-item"><span class="lang-name">Urdu</span><span class="lang-level lang-native">Native</span></div>
+          <div class="lang-item">
+            <span class="lang-name">English</span>
+            <span class="lang-level">C1</span>
+            <div class="lang-bar"><div class="lang-bar-fill" style="--w:85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card tilt-card reveal-up">
+      <div class="contact-glow"></div>
+      <div class="stage-label">Next step</div>
+      <h2>Let's automate the boring stuff.</h2>
+      <p class="section-sub">Looking to build AI-powered workflows, automate business processes, or collaborate on agentic LLM projects? I'm available for freelance work and direct engagements.</p>
+      <div class="contact-dock">
+        <a class="icon-btn icon-btn-lg" href="mailto:umair992266@gmail.com" aria-label="Email" data-tip="umair992266@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+        </a>
+        <a class="icon-btn icon-btn-lg" href="https://www.linkedin.com/in/umair-khan-3a546a418/" target="_blank" rel="noopener" aria-label="LinkedIn" data-tip="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a class="icon-btn icon-btn-lg" href="https://github.com/feroze9234-art" target="_blank" rel="noopener" aria-label="GitHub" data-tip="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.65 3.02 8.6 7.2 9.99.53.1.72-.23.72-.51v-1.99c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.61 2.46 1.15 3.07.88.1-.68.37-1.15.67-1.41-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.35.1-2.81 0 0 .89-.28 2.9 1.08a10.1 10.1 0 0 1 5.28 0c2.01-1.36 2.9-1.08 2.9-1.08.57 1.46.21 2.54.1 2.81.67.73 1.08 1.67 1.08 2.82 0 4.04-2.47 4.92-4.82 5.18.38.33.72.97.72 1.96v2.9c0 .28.19.62.73.51A10.51 10.51 0 0 0 22.5 12c0-5.8-4.7-10.5-10.5-10.5Z"/></svg>
+        </a>
+        <a class="icon-btn icon-btn-lg" href="Umair_Khan_CV.pdf" download aria-label="Download CV" data-tip="Download CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-wrap">
+    <span>Umair Khan · Agentic Workflow Architect &amp; LLM Engineer · Lahore, Pakistan</span>
+    <div class="footer-dock">
+      <a class="dock-btn" href="mailto:umair992266@gmail.com" aria-label="Email" data-tip="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></a>
+      <a class="dock-btn" href="https://www.linkedin.com/in/umair-khan-3a546a418/" target="_blank" rel="noopener" aria-label="LinkedIn" data-tip="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></a>
+      <a class="dock-btn" href="https://github.com/feroze9234-art" target="_blank" rel="noopener" aria-label="GitHub" data-tip="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.65 3.02 8.6 7.2 9.99.53.1.72-.23.72-.51v-1.99c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.61 2.46 1.15 3.07.88.1-.68.37-1.15.67-1.41-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.35.1-2.81 0 0 .89-.28 2.9 1.08a10.1 10.1 0 0 1 5.28 0c2.01-1.36 2.9-1.08 2.9-1.08.57 1.46.21 2.54.1 2.81.67.73 1.08 1.67 1.08 2.82 0 4.04-2.47 4.92-4.82 5.18.38.33.72.97.72 1.96v2.9c0 .28.19.62.73.51A10.51 10.51 0 0 0 22.5 12c0-5.8-4.7-10.5-10.5-10.5Z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
